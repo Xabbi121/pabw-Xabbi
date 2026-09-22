@@ -11,7 +11,7 @@
     <h1>Meta Cookie Use in the Arena</h1>
     <nav aria-label="Main navigation">
       <ul>
-        <li><a href="#Description">Meta Description</a></li>
+        <li><a href="#Description">Description</a></li>
         <li><a href="#Table of Content">Table of Content</a></li>
         <li><a href="#Add new Cookie to the list">Add new Cookie to the list</a></li>
       </ul>
@@ -54,39 +54,56 @@
           <tr>
             <th scope="row">Millenial Tree Cookie</th>
             <td>Legend</td>
-            <td>3 Health toping, 2 Amplify Buff toping </td>
+            <td>3 Health topping, 2 Amplify Buff topping </td>
           </tr>
 
           <tr>
             <th scope="row">Timekeeper Cookie</th>
             <td>Legend</td>
-            <td>Full Cooldown toping</td>
+            <td>Full Cooldown topping</td>
           </tr>
 
           <tr>
             <th scope="row">Ananas Dragon Cookie</th>
             <td>Dragon</td>
-            <td>Full attack toping</td>
+            <td>Full attack topping</td>
           </tr>
 
           <tr>
             <th scope="row">Povidine Iodine Cookie</th>
             <td>Super Epic</td>
-            <td>Full Cooldown toping</td>
+            <td>Full Cooldown topping</td>
           </tr>
 
           <tr>
             <th scope="row">Nether Queen Cookie</th>
             <td>Legend</td>
-            <td>3 Health toping, 2 Cooldown</td>
+            <td>3 Health topping, 2 Cooldown</td>
           </tr>
         </tbody>
       </table>
     </section>
  
     <section id="Add new Cookie to the list">
-      <h2>Add new Cookie to the list</h2>
-      <!-- your form goes here later (Sheet E) -->
+      <h2>Add new Cookie to the list</h2> 
+      <form action="/save" method="post">
+        <p>
+          <label for="Add New Cookie">Add New Cookie</label>
+          <input type="text" id="cookie-name" name="cookie-name" required>
+        </p>
+
+        <p>
+          <label for="Rarity">Rarity</label>
+          <input type="text" id="rarity" name="rarity" required>
+        </p>
+
+        <p>
+          <label for="Topping">Topping</label>
+          <input type="text" id="topping" name="topping" required>
+        </p>
+
+        <button type="submit">Save</button>
+      </form>
     </section>
   </main>
  

@@ -16,3 +16,4 @@ My page topic: Best meta cookie use in arena in Cookie Run Kingdom
 - Image: ArenaPrize.jpg
 
 ## Note on AI use
+No AI use to code
