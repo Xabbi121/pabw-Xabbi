@@ -13,6 +13,6 @@ My page topic: Best meta cookie use in arena in Cookie Run Kingdom
 - Two main sections: Table of Content, Add Cookie to the list
 - Table columns: Name, Rarity, Topping Built
 - Form columns: Add Cookie: Name, Rarity, Topping Built
-- Image:
+- Image: ArenaPrize.jpg
 
 ## Note on AI use
