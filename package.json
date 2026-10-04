@@ -1,0 +1,24 @@
+{
+  "name": "pabw-xabbi",
+  "version": "1.0.0",
+  "description": "This repo holds coursework for Web-Based Application\r Development, one folder per meeting.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xabbi121/pabw-Xabbi.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Xabbi121/pabw-Xabbi/issues"
+  },
+  "homepage": "https://github.com/Xabbi121/pabw-Xabbi#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.8"
+  }
+}
