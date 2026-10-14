@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arena Meta Cookie</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div  class="bg-dark text-light py-3">
+        <header class="container text-center my-4">
+            <h1 id="mainTitle" class="text-light">Cookie Run Meta Guide</h1>
+        </header>
+    
+        <!-- Navbar -->
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container d-flex flex-nowarp justify-content-center gap-2">
+                <a class="navbar-brand" href="#Description">Description</a>
+                <a class="navbar-brand" href="#Table of Content">Table of Content</a>
+                <a class="navbar-brand" href="#Add new Cookie">Add new Cookie</a>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container mt-5">
+        
+    <!-- Desc -->
+    <section id="description">
+        <h2>Description</h2>
+        <p>list of the current meta cookie to use on the arena in a hit mobile game cookie run kingdom.</p>
+        <figure>
+            <img src="Image/ArenaPrize.jpg" alt="High rank prize" class="img-fluid">  
+            <figcaption>Prize for reaching The highest rank possible</figcaption>
+        </figure>
+    </section>
+
+    <!-- Table Content -->
+    <div id="filter" class="mb-3 d-flex gap-2">
+        <button class="btn btn-outline-secondary-active" data-category="all">All</button>
+        <button class="btn btn-outline-secondary" data-category="legend">Legend</button>
+        <button class="btn btn-outline-secondary" data-category="dragon">Dragon</button>
+    </div>
+
+    <section id="table" class="mb-2">
+        <h2>Table of Content</h2>
+
+        <div class="table-responsive">
+            <table>
+                <caption>Table of Content</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Cookie Name</th>
+                        <th scope="col">Rarity</th>
+                        <th scope="col">Topping Built</th>
+                    </tr>
+                </thead>
+            
+                <tbody id="list">
+                    <tr>
+                        <td scope="row">Millenial Tree Cookie</td>
+                        <td>Legend</td>
+                        <td>3 Health topping, 2 Amplify Buff topping </td>
+                    </tr>
+
+                    <tr>
+                        <td scope="row">Timekeeper Cookie</td>
+                        <td>Legend</td>
+                        <td>Full Cooldown topping</td>
+                    </tr>
+
+                    <tr>
+                        <td scope="row">Ananas Dragon Cookie</td>
+                        <td>Dragon</td>
+                        <td>Full attack topping</td>
+                    </tr>
+
+                    <tr>
+                        <td scope="row">Povidine Iodine Cookie</td>
+                        <td>Super Epic</td>
+                        <td>Full Cooldown topping</td>
+                    </tr>
+
+                    <tr>
+                        <td scope="row">Nether Queen Cookie</td>
+                        <td>Legend</td>
+                        <td>3 Health topping, 2 Cooldown</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p id="empty-message" class="text-muted" hidden>No Cookie Found</p>
+        </section>
+
+    <!-- Add Cookie -->
+    <section id="addCookie">
+        <h2>Add new Cookie</h2> 
+        <form action="/save" method="post">
+            <div class="mb-3">
+                <label for="Add New Cookie">Add New Cookie</label>
+                <input type="text" id="cookie-name" name="cookie-name" required>
+            </div>
+
+            <div class="d-flex align-items-center gap-2 mb-3">
+                <label for="rarity" class="mb-0">Rarity</label>
+                <select id="rarity" name="rarity" required>
+                    <option value="">Select Rarity</option>
+                    <option value="">Witch</option>
+                    <option value="">Beast</option>
+                    <option value="">Ancient</option>
+                    <option value="">Legend</option>
+                    <option value="">Super Epic</option>
+                    <option value="">Epic</option>
+                    <option value="">Rare</option>
+                    <option value="">Common</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="Topping">Topping</label>
+                <input type="text" id="topping" name="topping" required>
+            </div>
+
+            <div class="mt-3">
+                <button class="btn btn-secondary">
+                    Submit
+                </button>
+            </div>
+        </form>
+    </section>
+
+    <footer class="mt-3 text-center border-top">
+        <p>Xabbi Alghifari Agratama · 25523211 · 2026</p>
+    </footer>
+    </div>
+
+    <script type="module" src="js/app.js" defer></script>
+    <script type="module" src="js/dom.js" defer></script>
+
+
+</body>
+</html>
