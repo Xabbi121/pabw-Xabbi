@@ -1,4 +1,3 @@
-//Task B
 const cookie = {
     name: "Timekeeper Cookie",
     Rarity: "Legend",
@@ -7,7 +6,6 @@ const cookie = {
 };
 window.cookie = cookie;
 
-//Task C
 const cookieProfile = `The name is ${cookie.name}, Their rarity are ${cookie.Rarity}, and people use her with ${cookie.toppingsamount} ${cookie.toppings[0]}.`;
 console.log(cookieProfile);  
 
@@ -23,13 +21,37 @@ console.log(formatToppings(cookie.toppings));
 window.CreateIntroduction = CreateIntroduction;
 window.formatToppings = formatToppings;
 
-//Task D
-const cookieList = [
-    {name: "Millenial Tree Cookie", rarity: "Legend", stillMeta: false},
-    {name: "Timekeeper Cookie", rarity: "Legend", stillMeta: true},
-    {name: "Ananas Dragon Cookie", rarity: "Dragon", stillMeta: true},
-    {name: "Povidine Iodine Cookie", rarity: "Super Epic", stillMeta: true},
-    {name: "Nether Queen Cookie", rarity: "Legend", stillMeta: true},
+export const cookieList = [
+    {
+        name: "Millenial Tree Cookie", 
+        rarity: "Legend", 
+        topping: "3 Health topping, 2 Amplify Buff topping",
+        stillMeta: false
+    },
+    {
+        name: "Timekeeper Cookie",
+        rarity: "Legend",
+        topping: "Full Cooldown topping", 
+        stillMeta: true
+    },
+    {
+        name: "Ananas Dragon Cookie", 
+        rarity: "Dragon", 
+        topping: "Full attack topping",
+        stillMeta: true
+    },
+    {
+        name: "Povidine Iodine Cookie", 
+        rarity: "Super Epic", 
+        topping: "Full Cooldown topping", 
+        stillMeta: true
+    },
+    {
+        name: "Nether Queen Cookie", 
+        rarity: "Legend", 
+        topping: "3 Health topping, 2 Cooldown", 
+        stillMeta: true
+    },
 ];
 
 window.cookieList = cookieList;
@@ -42,4 +64,3 @@ console.table(cookieMeta);
 
 const spesificCookie = cookieList.find((item) => item.name === "Timekeeper Cookie");
 console.log(spesificCookie);
-
