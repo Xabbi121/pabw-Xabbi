@@ -23,9 +23,9 @@
         <!-- Navbar -->
         <nav class="navbar navbar-dark bg-dark">
             <div class="container d-flex flex-nowarp justify-content-center gap-2">
-                <a class="navbar-brand" href="#Description">Description</a>
-                <a class="navbar-brand" href="#Table of Content">Table of Content</a>
-                <a class="navbar-brand" href="#Add new Cookie">Add new Cookie</a>
+                <a class="navbar-brand" href="#description">Description</a>
+                <a class="navbar-brand" href="#table">Table of Content</a>
+                <a class="navbar-brand" href="#addCookie">Add new Cookie</a>
             </div>
         </nav>
     </div>
@@ -45,6 +45,7 @@
     <!-- Table Content -->
     <div id="filter" class="mb-3 d-flex gap-2 ">
         <button class="btn btn-outline-secondary active" data-category="all">All</button>
+        <button class="btn btn-outline-secondary" data-category="Beast">Beast</button>
         <button class="btn btn-outline-secondary" data-category="Legend">Legend</button>
         <button class="btn btn-outline-secondary" data-category="Dragon">Dragon</button>
         <button class="btn btn-outline-secondary" data-category="Super Epic">Super Epic</button>
@@ -84,14 +85,14 @@
                 <label for="rarity" class="mb-0">Rarity</label>
                 <select id="rarity" name="rarity" required>
                     <option value="">Select Rarity</option>
-                    <option value="">Witch</option>
-                    <option value="">Beast</option>
-                    <option value="">Ancient</option>
-                    <option value="">Legend</option>
-                    <option value="">Super Epic</option>
-                    <option value="">Epic</option>
-                    <option value="">Rare</option>
-                    <option value="">Common</option>
+                    <option value="Witch">Witch</option>
+                    <option value="Beast">Beast</option>
+                    <option value="Ancient">Ancient</option>
+                    <option value="Legend">Legend</option>
+                    <option value="Super Epic">Super Epic</option>
+                    <option value="Epic">Epic</option>
+                    <option value="Rare">Rare</option>
+                    <option value="Common">Common</option>
                 </select>
             </div>
 
