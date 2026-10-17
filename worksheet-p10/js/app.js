@@ -65,5 +65,3 @@ console.table(cookieMeta);
 const spesificCookie = cookieList.find((item) => item.name === "Timekeeper Cookie");
 console.log(spesificCookie);
 
-import { load } from './api.js';
-load()
